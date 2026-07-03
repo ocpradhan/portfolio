@@ -23,7 +23,6 @@
 
 5. FEATURED PROJECTS
    - Projects Coming soon
-
 6. TECH STACK
    - Frontend
    - Backend
