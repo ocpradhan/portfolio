@@ -1,5 +1,6 @@
 import { MeshGradientBackground } from "./components/ui/mesh-gradient";
 import { ThemeProvider } from "./contexts/ThemeProvider";
+import AboutMe from "./sections/about-me/AboutMe";
 import Hero from "./sections/hero/Hero";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <MeshGradientBackground>
         <div className="p-6">
           <Hero />
+          <AboutMe />
         </div>
       </MeshGradientBackground>
     </ThemeProvider>

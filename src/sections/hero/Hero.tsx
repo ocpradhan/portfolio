@@ -1,17 +1,21 @@
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import Contact from "./Contact";
+import MyAvatar from "./MyAvatar";
 
 export default function Hero() {
   return (
-    <section>
-      <Avatar className="w-52 h-52">
-        <AvatarImage src="/user-img.png" />
-      </Avatar>
+    <section className="flex justify-between items-center gap-10">
+      <div className="flex flex-col gap-5 items-center">
+        <MyAvatar />
+        <Contact />
+      </div>
 
-      <div className="">
-        <p>Onesimus Chandra Pradhan</p>
-        <p>Frontend Developer | Aspiring Full Stack Developer</p>
+      <div>
+        <h1 className="text-lg font-bold">Onesimus Chandra Pradhan</h1>
+        <h2 className="text-md font-heading">
+          Frontend Developer | Aspiring Full Stack Developer
+        </h2>
 
-        <p>
+        <p className="text-sm/6 mt-2">
           I'm a Frontend Developer with 3 years of experience building
           responsive, scalable web applications using React, TypeScript, and
           modern JavaScript. I'm currently expanding my expertise into backend
