@@ -4,9 +4,20 @@ import { ButtonGroup } from "@/components/ui/button-group";
 import { FileUser, Mail, Phone } from "lucide-react";
 import { LinkedinIcon } from "@/components/icons/lucide-linkedin";
 
-export default function Contact() {
+import { useMediaQueries } from "@/hooks/useMediaQueries";
+
+type ContactProps = {
+  className?: string;
+};
+
+export default function Contact({ className }: ContactProps) {
+  const matches = useMediaQueries("560");
+
   return (
-    <ButtonGroup>
+    <ButtonGroup
+      orientation={matches ? "horizontal" : "vertical"}
+      className={className}
+    >
       <Button variant="outline" size="lg" className="cursor-pointer">
         <FileUser />
       </Button>

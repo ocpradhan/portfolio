@@ -5,9 +5,9 @@ import Hero from "./sections/hero/Hero";
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-them">
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <MeshGradientBackground>
-        <div className="p-6">
+        <div className="h-screen overflow-auto p-6">
           <Hero />
           <AboutMe />
         </div>

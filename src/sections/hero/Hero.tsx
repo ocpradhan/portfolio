@@ -3,7 +3,7 @@ import MyAvatar from "./MyAvatar";
 
 export default function Hero() {
   return (
-    <section className="flex justify-between items-center gap-10">
+    <section className="flex justify-between items-start sm:items-center gap-10">
       <div className="flex flex-col gap-5 items-center">
         <MyAvatar />
         <Contact />
