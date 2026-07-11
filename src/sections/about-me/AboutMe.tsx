@@ -52,7 +52,7 @@ export default function AboutMe() {
   );
 
   return (
-    <div className="flex gap-5  justify-center w-full mx-auto mt-10 px-6 relative xl:w-7xl">
+    <div className="flex gap-5  justify-center w-full mx-auto mt-10 relative xl:w-7xl">
       <div className="w-full lg:w-3/4  lg:ps-15 min-w-0 relative lg:border-s ">
         <div className="lg:flex flex-col gap-2 px-5 py-1 lg:absolute lg:-left-40">
           <h3 className="text-xl text-nowrap hidden lg:block">
@@ -72,7 +72,7 @@ export default function AboutMe() {
           <CarouselContent>
             {aboutMeList?.sectionInfo.map((item, i) => (
               <CarouselItem key={i} className="px-5 py-2">
-                <Card className="border border-border bg-inherit">
+                <Card className="border border-border bg-inherit text-justify sm:text-left">
                   <CardContent className="pt-2 px-5">{item.desc}</CardContent>
                 </Card>
               </CarouselItem>
