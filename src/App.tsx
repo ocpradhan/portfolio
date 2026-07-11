@@ -3,6 +3,7 @@ import { ThemeProvider } from "./contexts/ThemeProvider";
 import AboutMe from "./sections/about-me/AboutMe";
 import Hero from "./sections/hero/Hero";
 import TechStack from "./sections/tech-stack/TechStack";
+import WorkExperience from "./sections/work-experience/WorkExperience";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Hero />
           <AboutMe />
           <TechStack />
+          <WorkExperience />
         </div>
       </MeshGradientBackground>
     </ThemeProvider>

@@ -5,7 +5,10 @@ export type Icon = {
 };
 
 export type SectionInfo = {
-  name: string;
+  name?: string;
+  role?: string;
+  company?: string;
+  duration?: string;
   desc?: string;
   icons?: ReactNode[];
 };
