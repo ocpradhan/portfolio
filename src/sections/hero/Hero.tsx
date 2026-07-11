@@ -6,7 +6,7 @@ export default function Hero() {
   const matches = useMediaQueries("560");
 
   return (
-    <section className="flex flex-row justify-between items-start sm:items-center gap-10">
+    <section className="flex flex-row justify-between items-start sm:items-center gap-10 px-5">
       <div className="sm:flex flex-col gap-5 items-center hidden px-6">
         <MyAvatar />
         {matches && <Contact />}

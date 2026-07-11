@@ -78,7 +78,7 @@ export default function AboutMe() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="flex gap-2 justify-center  mt-4 lg:mt-0">
+          <div className="flex gap-2 justify-center mt-4 lg:mt-0">
             <CarouselPrevious className="static  lg:absolute top-55 left-50 lg:top-6 lg:-translate-y-1/2 lg:-left-12" />
             <CarouselNext className=" static lg:absolute top-55 right-50 lg:top-6 lg:-translate-y-1/2 lg:-right-12" />
           </div>
