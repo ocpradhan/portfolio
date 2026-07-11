@@ -80,7 +80,7 @@ export default function TechStack() {
       render={(teckStack, index) => (
         <CarouselItem key={index} className="px-5 py-2">
           <Card className="border border-border bg-inherit">
-            <CardContent className="pt-2 px-5 flex gap-4 items-center justify-center">
+            <CardContent className="pt-2 px-5 flex gap-4 items-center justify-center flex-wrap">
               {teckStack?.icons?.map((item, index) => (
                 <span key={index}>{item}</span>
               ))}
