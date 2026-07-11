@@ -1,16 +1,7 @@
-import { useEffect, useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import { type CarouselApi } from "@/components/ui/carousel";
-import { Badge } from "@/components/ui/badge";
-
 import type { Section } from "@/types/shared.types";
+import Box from "@/components/ui/box";
+import { CarouselItem } from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
 
 const aboutMeList: Section = {
   sectionName: "About Me",
@@ -31,59 +22,16 @@ const aboutMeList: Section = {
 };
 
 export default function AboutMe() {
-  const [api, setApi] = useState<CarouselApi>();
-  const [currentSlide, setCurrentSlide] = useState<number>(0);
-
-  useEffect(
-    function () {
-      if (!api) {
-        return;
-      }
-
-      const handleSelect = () => setCurrentSlide(api.selectedScrollSnap());
-
-      api.on("select", handleSelect);
-
-      return () => {
-        api.off("select", handleSelect);
-      };
-    },
-    [api],
-  );
-
   return (
-    <div className="flex gap-5  justify-center w-full mx-auto mt-10 relative xl:w-7xl">
-      <div className="w-full lg:w-3/4  lg:ps-15 min-w-0 relative lg:border-s ">
-        <div className="lg:flex flex-col gap-2 px-5 py-1 lg:absolute lg:-left-40">
-          <h3 className="text-xl text-nowrap hidden lg:block">
-            {aboutMeList.sectionName}
-          </h3>
-          <p className="text-sm/6 text-nowrap hidden lg:block">
-            {aboutMeList.sectionInfo[currentSlide]?.name}
-          </p>
-
-          <Badge className="lg:hidden flex items-center justify-center gap-2 h-10 absolute -top-1 left-3 z-50 bg-gray-800/95 shadow-lg">
-            <span className="text-sm">{aboutMeList.sectionName} </span>-
-            <span>{aboutMeList.sectionInfo[currentSlide]?.name}</span>
-          </Badge>
-        </div>
-
-        <Carousel setApi={setApi} className=" relative">
-          <CarouselContent>
-            {aboutMeList?.sectionInfo.map((item, i) => (
-              <CarouselItem key={i} className="px-5 py-2">
-                <Card className="border border-border bg-inherit text-justify sm:text-left">
-                  <CardContent className="pt-2 px-5">{item.desc}</CardContent>
-                </Card>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <div className="flex gap-2 justify-center mt-4 lg:mt-0">
-            <CarouselPrevious className="static  lg:absolute top-55 left-50 lg:top-6 lg:-translate-y-1/2 lg:-left-12" />
-            <CarouselNext className=" static lg:absolute top-55 right-50 lg:top-6 lg:-translate-y-1/2 lg:-right-12" />
-          </div>
-        </Carousel>
-      </div>
-    </div>
+    <Box
+      detailsList={aboutMeList}
+      render={(aboutMe, index) => (
+        <CarouselItem key={index} className="px-5 py-2">
+          <Card className="border border-border bg-inherit text-justify sm:text-left">
+            <CardContent className="pt-2 px-5">{aboutMe.desc}</CardContent>
+          </Card>
+        </CarouselItem>
+      )}
+    />
   );
 }
