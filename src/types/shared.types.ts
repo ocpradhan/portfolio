@@ -10,6 +10,7 @@ export type SectionInfo = {
   company?: string;
   duration?: string;
   desc?: string;
+  degree?: string;
   icons?: ReactNode[];
 };
 
