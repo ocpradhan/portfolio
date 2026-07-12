@@ -61,12 +61,6 @@ export default function Box({
             <span>
               {detailsList.sectionInfo[currentSlide]?.name ||
                 detailsList.sectionInfo[currentSlide]?.role}{" "}
-              (
-              <span className="italic">
-                {detailsList.sectionInfo[currentSlide]?.company}{" "}
-                {detailsList.sectionInfo[currentSlide]?.duration}{" "}
-              </span>
-              )
             </span>
           </Badge>
         </div>

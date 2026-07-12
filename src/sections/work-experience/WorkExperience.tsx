@@ -29,6 +29,11 @@ export default function WorkExperience() {
         <CarouselItem key={index} className="px-5 py-2">
           <Card className="border border-border bg-inherit text-justify sm:text-left">
             <CardContent className="pt-2 px-5">
+              <span className="block mb-5 italic text-xs">
+                <p>
+                  ({workExperience.company} {workExperience.duration})
+                </p>
+              </span>
               {workExperience.desc}
             </CardContent>
           </Card>
