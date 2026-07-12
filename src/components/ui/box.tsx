@@ -48,12 +48,6 @@ export default function Box({
           <div className="text-sm/6 hidden min-[1228px]:block">
             {detailsList.sectionInfo[currentSlide]?.name ||
               detailsList.sectionInfo[currentSlide]?.role}
-            <p className="italic text-xs">
-              {detailsList.sectionInfo[currentSlide]?.company}
-            </p>
-            <p className="italic text-xs">
-              {detailsList.sectionInfo[currentSlide]?.duration}
-            </p>
           </div>
 
           <Badge className="min-[1228px]:hidden flex items-center justify-center gap-2 h-10 absolute -top-1 left-3 z-50 bg-gray-800/95 shadow-lg">
