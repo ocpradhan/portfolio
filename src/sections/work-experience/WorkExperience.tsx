@@ -13,7 +13,7 @@ const workExperienceList: Section = {
       desc: "As a Frontend Developer at Cosmotech AI, I've contributed to the development of enterprise web applications that streamline business operations and enhance user experiences. My work focuses on building responsive, scalable, and maintainable interfaces using modern frontend technologies while collaborating closely with backend developers, designers, and cross-functional teams in an Agile environment.",
     },
     {
-      role: "Frontend Developer Intern / Trainee",
+      role: "Frontend Developer Intern",
       company: "Cosmotech AI",
       duration: "Jan 2023 – Nov 2023",
       desc: "Joined as a Frontend Developer Intern for the first 6 months. Due to strong project performance, the role was extended into a 5-month probationary phase with increased project ownership prior to full-time absorption. Key Responsibilities & Projects: Developed and delivered responsive web pages and components using modern frontend tech stacks. Collaborated with the core engineering team to integrate APIs and improve website user experience. Participated in code reviews and fixed UI bugs to ensure seamless cross-browser compatibility.",
