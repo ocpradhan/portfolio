@@ -1,16 +1,17 @@
 "use client";
 
-import { ReactNode, useState } from "react";
+import { ReactNode } from "react";
 import { Button } from "../ui/button";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
+import { useNavPanel } from "@/context/NavPanelContext";
 
 type HamburgerProps = {
   children: ReactNode;
 };
 
 export default function Hamburger({ children }: HamburgerProps) {
-  const [isOpen, setIsOpen] = useState(false);
+  const { isOpen, setIsOpen } = useNavPanel();
 
   return (
     <>

@@ -1,5 +1,6 @@
 "use client";
 
+import { useNavPanel } from "@/context/NavPanelContext";
 import { useLenis } from "lenis/react";
 import { ReactNode } from "react";
 
@@ -10,6 +11,7 @@ type NavigationLinkProps = {
 
 export default function NavLink({ id, children }: NavigationLinkProps) {
   const lenis = useLenis();
+  const { setIsOpen } = useNavPanel();
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -17,6 +19,7 @@ export default function NavLink({ id, children }: NavigationLinkProps) {
       lerp: 0.05,
       offset: -80,
     });
+    setIsOpen(false);
   };
 
   return (

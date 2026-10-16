@@ -1,3 +1,4 @@
+import { NavPanelContextProvider } from "@/context/NavPanelContext";
 import Hamburger from "../custom/Hamburger";
 import NavLink from "./NavLink";
 
@@ -20,23 +21,24 @@ export default function Header() {
       <p className="font-lora font-bold text-xl cursor-pointer">
         Onesimus Chandra Pradhan
       </p>
-
-      <nav className="hidden lg:block mr-5">
-        <ul className="flex gap-10">
+      <NavPanelContextProvider>
+        <nav className="hidden lg:block mr-5">
+          <ul className="flex gap-10">
+            {navigationLinks.map(({ section, id }: NavigationType) => (
+              <NavLink key={id} id={id}>
+                {section}
+              </NavLink>
+            ))}
+          </ul>
+        </nav>
+        <Hamburger>
           {navigationLinks.map(({ section, id }: NavigationType) => (
             <NavLink key={id} id={id}>
               {section}
             </NavLink>
           ))}
-        </ul>
-      </nav>
-      <Hamburger>
-        {navigationLinks.map(({ section, id }: NavigationType) => (
-          <NavLink key={id} id={id}>
-            {section}
-          </NavLink>
-        ))}
-      </Hamburger>
+        </Hamburger>
+      </NavPanelContextProvider>
     </header>
   );
 }
