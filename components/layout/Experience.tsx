@@ -30,7 +30,9 @@ export default function Experience() {
       <p className="font-lora font-extralight text-foreground/80 tracking-normal">
         03 - Experience
       </p>
-      <h1 className="font-extrabold text-6xl mt-5 mb-5">How I got here.</h1>
+      <h1 className="font-extrabold text-2xl md:text-5xl lg:text-6xl mt-5 mb-5">
+        How I got here.
+      </h1>
 
       <div className="w-full space-y-12 md:space-y-0">
         {experiences.map((exp) => {
@@ -44,9 +46,7 @@ export default function Experience() {
               </div>
 
               <div className="flex flex-col items-start">
-                <p className="text-xl font-semibold lg:font-normal">
-                  {exp.role}
-                </p>
+                <p className="lg:text-xl font-semibold">{exp.role}</p>
                 <p className="text-primary">{exp.company}</p>
               </div>
 

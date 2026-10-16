@@ -15,9 +15,13 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex flex-col text-center lg:text-start">
-          <h1 className="font-extrabold text-9xl">Interfaces</h1>
-          <h1 className="text-primary font-extrabold text-9xl ml-30">With</h1>
-          <h1 className="font-extrabold text-9xl">
+          <h1 className="font-extrabold text-5xl md:text-8xl lg:text-9xl">
+            Interfaces
+          </h1>
+          <h1 className="text-primary font-extrabold text-5xl md:text-8xl lg:text-9xl lg:ml-30">
+            With
+          </h1>
+          <h1 className="font-extrabold text-5xl md:text-8xl lg:text-9xl">
             Intent<span className="text-yellow-500">.</span>
           </h1>
         </div>

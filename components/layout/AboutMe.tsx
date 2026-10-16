@@ -31,7 +31,7 @@ export default function AboutMe() {
           01 - About me
         </p>
         <div className="flex flex-col justify-between tracking-normal gap-10 flex-3">
-          <h1 className="font-medium text-6xl">
+          <h1 className="font-medium text-2xl md:text-5xl lg:text-6xl">
             I&apos;m Onesimus — a frontend developer who cares about the details
             users feel and the systems that make them possible.
           </h1>

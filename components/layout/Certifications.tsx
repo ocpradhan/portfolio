@@ -1,7 +1,6 @@
 import Container from "@/components/common/Container";
 import {
   Card,
-  CardAction,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -85,7 +84,9 @@ export default function Certifications() {
       <p className="font-lora font-extralight text-foreground/80 tracking-normal">
         03 - Certifications
       </p>
-      <h1 className="font-extrabold text-6xl mt-5">Proof of practice.</h1>
+      <h1 className="font-extrabold text-2xl md:text-5xl lg:text-6xl mt-5">
+        Proof of practice.
+      </h1>
       <ScrollArea className="w-full rounded-md border-b flex-justify center">
         <div className="flex flex-col lg:flex-row gap-10 mt-5 w-full max-w-lg lg:max-w-none mx-auto px-2">
           {certifications.map((certificate) => {
@@ -95,15 +96,15 @@ export default function Certifications() {
                 key={certificate.name}
               >
                 <CardHeader>
-                  <CardAction>
-                    <Badge variant="secondary">
+                  <CardTitle className="flex flex-col lg:flex-row justify-between gap-2">
+                    <div className="flex flex-col">
+                      <span>{certificate.name}</span>
+                      <Badge variant="secondary">
+                        {certificate.certificateSource}
+                      </Badge>
+                    </div>
+                    <Badge variant="secondary" className="self-start">
                       {certificate.dateCompleted}
-                    </Badge>
-                  </CardAction>
-                  <CardTitle className="flex flex-col">
-                    <span>{certificate.name}</span>
-                    <Badge variant="secondary">
-                      {certificate.certificateSource}
                     </Badge>
                   </CardTitle>
                   <CardDescription className="font-dm-sans">

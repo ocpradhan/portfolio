@@ -41,7 +41,9 @@ export default function Projects() {
         02 - Projects
       </p>
       <div className="flex justify-between">
-        <h1 className="font-extrabold text-6xl mt-5">Made to matter.</h1>
+        <h1 className="font-extrabold text-2xl md:text-5xl lg:text-6xl mt-5">
+          Made to matter.
+        </h1>
         <p className="self-end font-lora text-sm">
           {projectList?.length} project(s)
         </p>

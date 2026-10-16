@@ -10,7 +10,7 @@ export default function Footer() {
         04 - Contact me
       </p>
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mt-10 mb-20">
-        <h1 className="text-8xl -tracking-widest flex-2 text-primary-foreground">
+        <h1 className="text-3xl md:text-7xl lg:text-8xl -tracking-widest flex-2 text-primary-foreground">
           Have a hard problem?
         </h1>
 
