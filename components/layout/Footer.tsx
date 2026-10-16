@@ -5,7 +5,7 @@ import CopyButton from "./CopyButton";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary p-30" id="contactMe">
+    <footer className="bg-primary p-10 lg:p-30" id="contactMe">
       <p className="font-lora font-extralight tracking-normal text-primary-foreground/80">
         04 - Contact me
       </p>

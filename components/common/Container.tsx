@@ -12,7 +12,7 @@ export default function Container({
   bgColor = "bg-secondary",
 }: ContainerProps) {
   return (
-    <section className={`p-30 ${bgColor}`} id={id}>
+    <section className={`p-10 lg:p-30 ${bgColor}`} id={id}>
       {children}
     </section>
   );

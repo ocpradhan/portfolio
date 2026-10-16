@@ -16,7 +16,7 @@ const navigationLinks: NavigationType[] = [
 
 export default function Header() {
   return (
-    <header className="flex justify-between fixed top-0 z-50 w-full bg-background/80 shadow-sm backdrop-blur-lg py-5 px-40 items-center">
+    <header className="flex justify-between fixed top-0 z-50 w-full bg-background/80 shadow-sm backdrop-blur-lg py-5 px-10 lg:px-40 items-center">
       <p className="font-lora font-bold text-xl cursor-pointer">
         Onesimus Chandra Pradhan
       </p>

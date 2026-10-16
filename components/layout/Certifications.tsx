@@ -92,7 +92,7 @@ export default function Certifications() {
           {certifications.map((certificate) => {
             return (
               <Card
-                className="py-5 shrink-0 min-w-96 flex flex-col justify-between"
+                className="py-5 shrink-0 min-w-28 flex flex-col justify-between"
                 key={certificate.name}
               >
                 <CardHeader>

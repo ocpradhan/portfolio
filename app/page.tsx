@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="flex flex-col flex-1 font-viga">
       <Header />
-      <div className="px-40 py-10">
+      <div className="px-15 lg:px-40 py-10">
         <Hero />
       </div>
       <hr className="border-foreground/50" />
