@@ -20,11 +20,19 @@ type CertificateType = {
 
 const certifications: CertificateType[] = [
   {
+    name: "Using Python to Interact with the Operating System",
+    certificateSource: "Google",
+    dateCompleted: "Oct 2026",
+    description:
+      "Learned how to use Python and Bash scripts to automate computer and operating system tasks, such as managing files, processing system logs, running subprocesses, and performing unit tests",
+    url: "https://coursera.org/share/4d24db92fe93ecf446095e6177fe12b1",
+  },
+  {
     name: "Crash Course on Python",
     certificateSource: "Google",
     dateCompleted: "Jul 2026",
     description:
-      "Learn to write short Python scripts using core data structures like strings, lists, and dictionaries to perform automated actions.",
+      "Learned to write short Python scripts using core data structures like strings, lists, and dictionaries to perform automated actions.",
     url: "https://coursera.org/share/44e446f70f75195c1b82bede0f157d8b",
   },
   {
