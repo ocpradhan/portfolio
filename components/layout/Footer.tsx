@@ -29,6 +29,7 @@ export default function Footer() {
             href="https://github.com/ocpradhan"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Github Profile"
             className="cursor-pointer"
           >
             <GitHubLogo className="w-5 h-5 text-primary-foreground/80" />
@@ -37,6 +38,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/onesimus-chandra/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
             className="cursor-pointer"
           >
             <LinkedInLogo className="w-5 h-5 text-primary-foreground/80" />

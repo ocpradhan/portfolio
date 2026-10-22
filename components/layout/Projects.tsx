@@ -90,20 +90,24 @@ export default function Projects() {
 
                     <div className="flex flex-col gap-3 ">
                       {url !== "Not yet deployed" ? (
-                        <a href={url} target="_blank" rel="noopener noreferrer">
-                          <button className="bg-inherit text-foreground/80 hover:bg-inherit hover:text-foreground/80 hover:translate-x-1 hover:-translate-y-1 cursor-pointer transition-all duration-300">
-                            <ArrowUpIcon className="rotate-45 w-8 h-8" />
-                          </button>
+                        <a
+                          href={url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View live project"
+                          className="bg-inherit text-foreground/80 hover:bg-inherit hover:text-foreground/80 hover:translate-x-1 hover:-translate-y-1 cursor-pointer transition-all duration-300"
+                        >
+                          <ArrowUpIcon className="rotate-45 w-8 h-8" />
                         </a>
                       ) : null}
                       <a
                         href={githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="View source code on GitHub"
+                        className="bg-inherit text-foreground/80 hover:bg-inherit hover:text-foreground/80 hover:translate-x-1 hover:-translate-y-1 cursor-pointer transition-all duration-300"
                       >
-                        <button className="bg-inherit text-foreground/80 hover:bg-inherit hover:text-foreground/80 hover:translate-x-1 hover:-translate-y-1 cursor-pointer transition-all duration-300">
-                          <GitHubLogo className="w-8 h-8" />
-                        </button>
+                        <GitHubLogo className="w-8 h-8" />
                       </a>
                     </div>
                   </div>
