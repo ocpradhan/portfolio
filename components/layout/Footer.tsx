@@ -6,7 +6,7 @@ import CopyButton from "./CopyButton";
 export default function Footer() {
   return (
     <footer className="bg-primary p-10 lg:p-30" id="contactMe">
-      <p className="font-lora font-extralight tracking-normal text-primary-foreground/80">
+      <p className="font-lora font-extralight tracking-normal text-primary-foreground">
         04 - Contact me
       </p>
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mt-10 mb-20">
@@ -15,7 +15,7 @@ export default function Footer() {
         </h1>
 
         <div className="flex-3 text-end">
-          <p className="font-dm-sans font-light text-lg tracking-wide text-primary-foreground/80 mb-5">
+          <p className="font-dm-sans font-light text-lg tracking-wide text-primary-foreground mb-5">
             Just say hello.
           </p>
           <CopyButton />
@@ -32,7 +32,7 @@ export default function Footer() {
             aria-label="Github Profile"
             className="cursor-pointer"
           >
-            <GitHubLogo className="w-5 h-5 text-primary-foreground/80" />
+            <GitHubLogo className="w-5 h-5 text-primary-foreground" />
           </a>
           <a
             href="https://www.linkedin.com/in/onesimus-chandra/"
@@ -41,12 +41,12 @@ export default function Footer() {
             aria-label="LinkedIn Profile"
             className="cursor-pointer"
           >
-            <LinkedInLogo className="w-5 h-5 text-primary-foreground/80" />
+            <LinkedInLogo className="w-5 h-5 text-primary-foreground" />
           </a>
         </div>
 
         <a
-          className="text-primary-foreground/80 flex gap-2 cursor-pointer"
+          className="text-primary-foreground flex gap-2 cursor-pointer"
           href="/files/Onesimus_Resume.pdf"
           download="Onesimus_Resume.pdf"
         >
@@ -54,7 +54,7 @@ export default function Footer() {
           <p className="text-sm">Download Resume</p>
         </a>
 
-        <span className="text-primary-foreground/80 flex gap-2">
+        <span className="text-primary-foreground flex gap-2">
           <Copyright className="w-5 h-5" />
           <p className="text-sm">2026 Onesimus Chandra Pradhan</p>
         </span>
