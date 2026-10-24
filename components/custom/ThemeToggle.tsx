@@ -38,7 +38,7 @@ export function ThemeToggle() {
             : "Switch to dark mode"
         }
         onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
-        className="cursor-pointer rounded-full"
+        className="cursor-pointer rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
       >
         {currentTheme === "dark" ? (
           <Sun className="h-[1.2rem] w-[1.2rem]" />

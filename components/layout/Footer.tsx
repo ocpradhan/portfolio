@@ -5,7 +5,7 @@ import CopyButton from "./CopyButton";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary p-10 lg:p-30" id="contactMe">
+    <footer className="bg-primary p-10 lg:p-30 font-viga" id="contactMe">
       <p className="font-lora font-extralight tracking-normal text-primary-foreground">
         04 - Contact me
       </p>
@@ -30,7 +30,8 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Github Profile"
-            className="cursor-pointer"
+            className="inline-flex items-center justify-center p-2 cursor-pointer
+            focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-foreground transition-colors"
           >
             <GitHubLogo className="w-5 h-5 text-primary-foreground" />
           </a>
@@ -39,14 +40,14 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
-            className="cursor-pointer"
+            className="inline-flex items-center justify-center p-2 text-primary-foreground cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-foreground transition-colors"
           >
             <LinkedInLogo className="w-5 h-5 text-primary-foreground" />
           </a>
         </div>
 
         <a
-          className="text-primary-foreground flex gap-2 cursor-pointer"
+          className="inline-flex items-center gap-2 px-3 py-2 text-primary-foreground cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-foreground transition-colors"
           href="/files/Onesimus_Resume.pdf"
           download="Onesimus_Resume.pdf"
         >

@@ -65,20 +65,22 @@ export default function Projects() {
               return (
                 <div
                   key={projectName}
-                  className="relative overflow-hidden bg-cover bg-no-repeat group flex flex-col gap-5 shrink-0 lg:w-lg pb-5"
+                  className="relative bg-cover bg-no-repeat group flex flex-col gap-5 shrink-0 lg:w-lg pb-5"
                 >
                   <Badge className="absolute font-dm-sans text-sm z-10 bg-secondary rounded-full w-8 h-8 flex items-center justify-center top-4 left-4">
                     {index + 1}
                   </Badge>
 
-                  <Image
-                    src={image}
-                    className="transition duration-300 ease-in-out w-lg group-hover:scale-110 grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 rounded-lg aspect-video"
-                    alt={`${projectName} Image`}
-                    quality={100}
-                    width={512}
-                    height={512}
-                  />
+                  <div className="relative overflow-hidden rounded-lg">
+                    <Image
+                      src={image}
+                      className="transition duration-300 ease-in-out w-lg group-hover:scale-110 grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 rounded-lg aspect-video"
+                      alt={`${projectName} Image`}
+                      quality={100}
+                      width={640}
+                      height={360}
+                    />
+                  </div>
 
                   <div className="tracking-normal flex justify-between items-center gap-5">
                     <div>
@@ -94,8 +96,8 @@ export default function Projects() {
                           href={url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          aria-label="View live project"
-                          className="bg-inherit text-foreground/80 hover:bg-inherit hover:text-foreground/80 hover:translate-x-1 hover:-translate-y-1 cursor-pointer transition-all duration-300"
+                          aria-label={`View live demo for ${projectName}`}
+                          className="bg-inherit text-foreground/80 hover:bg-inherit hover:text-foreground/80 hover:translate-x-1 hover:-translate-y-1 cursor-pointer transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                         >
                           <ArrowUpIcon className="rotate-45 w-8 h-8" />
                         </a>
@@ -104,8 +106,8 @@ export default function Projects() {
                         href={githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="View source code on GitHub"
-                        className="bg-inherit text-foreground/80 hover:bg-inherit hover:text-foreground/80 hover:translate-x-1 hover:-translate-y-1 cursor-pointer transition-all duration-300"
+                        aria-label={`View ${projectName} source code on GitHub`}
+                        className="bg-inherit text-foreground/80 hover:bg-inherit hover:text-foreground/80 hover:translate-x-1 hover:-translate-y-1 cursor-pointer transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                       >
                         <GitHubLogo className="w-8 h-8" />
                       </a>

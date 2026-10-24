@@ -8,21 +8,22 @@ import Projects from "@/components/layout/Projects";
 
 export default function Home() {
   return (
-    <main className="flex flex-col flex-1 font-viga">
+    <>
       <Header />
-      <div className="px-15 lg:px-40 py-10">
-        <Hero />
-      </div>
-      <hr className="border-foreground/50" />
-      <AboutMe />
-      <hr className="border-foreground/50" />
-      <Projects />
-      <hr className="border-foreground/50" />
-      <Experience />
-      <hr className="border-foreground/50" />
-      <Certifications />
-
+      <main className="flex flex-col flex-1 font-viga">
+        <div className="px-15 lg:px-40 py-10">
+          <Hero />
+        </div>
+        <hr className="border-foreground/50" />
+        <AboutMe />
+        <hr className="border-foreground/50" />
+        <Projects />
+        <hr className="border-foreground/50" />
+        <Experience />
+        <hr className="border-foreground/50" />
+        <Certifications />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }

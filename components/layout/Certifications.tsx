@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 type CertificateType = {
@@ -95,7 +95,7 @@ export default function Certifications() {
       <h1 className="font-extrabold text-2xl md:text-5xl lg:text-6xl mt-5">
         Proof of practice.
       </h1>
-      <ScrollArea className="w-full rounded-md border-b flex-justify center">
+      <ScrollArea className="w-full rounded-md border-b flex-justify center outline-none [&>div]:outline-none">
         <div className="flex flex-col lg:flex-row gap-10 mt-5 w-full max-w-lg lg:max-w-none mx-auto px-2">
           {certifications.map((certificate) => {
             return (
@@ -124,10 +124,13 @@ export default function Certifications() {
                     href={certificate.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`View ${certificate.name} certificate (opens in a new tab)`}
+                    className={
+                      buttonVariants({ variant: "default" }) +
+                      " w-full cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-card"
+                    }
                   >
-                    <Button className="w-full cursor-pointer">
-                      View Certificate
-                    </Button>
+                    View Certificate
                   </a>
                 </CardFooter>
               </Card>

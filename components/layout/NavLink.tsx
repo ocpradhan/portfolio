@@ -23,12 +23,14 @@ export default function NavLink({ id, children }: NavigationLinkProps) {
   };
 
   return (
-    <li
-      className="cursor-pointer text-foreground/60 hover:text-foreground transition-all duration-300"
-      key={id}
-      onClick={handleClick}
-    >
-      {children}
+    <li>
+      <a
+        className="cursor-pointer text-foreground/60 hover:text-foreground transition-all duration-300 font-viga outline-none rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+        href={id}
+        onClick={handleClick}
+      >
+        {children}
+      </a>
     </li>
   );
 }

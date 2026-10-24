@@ -23,9 +23,15 @@ const loraFont = Lora({
 });
 
 export const metadata: Metadata = {
+  // 1. Defining base production URL so Next.js can resolve relative links
+  metadataBase: new URL("https://onesimus-pradhan.vercel.app"),
   title: "Onesimus/Dev",
   description:
     "Personal portfolio of Onesimus, a software engineer specializing in building modern, scalable, and responsive web applications.",
+  // 2. Adding canonical link pointing to the master URL of the page
+  alternates: {
+    canonical: "/", // Using "/" for the home page, or "/about" for subpages
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -35,6 +41,25 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${vigaFont.variable} ${dmSansFont.variable} ${loraFont.variable} h-full antialiased`}
       suppressHydrationWarning
     >
+      <head>
+        {/* Structured Data fro SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https:schema.org",
+              "@type": "Person",
+              name: "Onesimus Chandra Pradhan",
+              jobTitle: "Frontend Developer",
+              url: "https://onesimus-pradhan.vercel.app",
+              sameAs: [
+                "https://github.com/ocpradhan",
+                "https://www.linkedin.com/in/onesimus-chandra",
+              ],
+            }),
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <LenisProvider>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
