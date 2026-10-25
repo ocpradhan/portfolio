@@ -24,7 +24,7 @@ export function ThemeToggle() {
         variant="outline"
         size="icon"
         aria-label={
-          currentTheme === "dark"
+          !isMounted || currentTheme === "dark"
             ? "Switch to light mode"
             : "Switch to dark mode"
         }
@@ -36,8 +36,8 @@ export function ThemeToggle() {
         ) : (
           <Moon className="h-[1.2rem] w-[1.2rem]" />
         )}
+        <span className="sr-only">Toggle theme</span>
       </Button>
-      <span className="sr-only">Toggle theme</span>
     </>
   );
 }
