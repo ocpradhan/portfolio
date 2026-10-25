@@ -16,15 +16,6 @@ export function ThemeToggle() {
     () => false,
   );
 
-  if (!isMounted) {
-    return (
-      <Button variant="outline" size="icon">
-        <Sun className="h-[1.2rem] w-[1.2rem]" />
-        <span className="sr-only">Toggle theme</span>
-      </Button>
-    );
-  }
-
   const currentTheme = theme === "system" ? resolvedTheme : theme;
 
   return (
@@ -40,7 +31,7 @@ export function ThemeToggle() {
         onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
         className="cursor-pointer rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
       >
-        {currentTheme === "dark" ? (
+        {!isMounted || currentTheme === "dark" ? (
           <Sun className="h-[1.2rem] w-[1.2rem]" />
         ) : (
           <Moon className="h-[1.2rem] w-[1.2rem]" />
