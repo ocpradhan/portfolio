@@ -47,7 +47,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https:schema.org",
+              "@context": "https://schema.org",
               "@type": "Person",
               name: "Onesimus Chandra Pradhan",
               jobTitle: "Frontend Developer",

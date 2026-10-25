@@ -74,7 +74,7 @@ export default function Projects() {
                   <div className="relative overflow-hidden rounded-lg">
                     <Image
                       src={image}
-                      className="transition duration-300 ease-in-out w-lg group-hover:scale-110 grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 rounded-lg aspect-video"
+                      className="transition duration-300 ease-in-out w-lg group-hover:scale-110 grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 rounded-lg"
                       alt={`${projectName} Image`}
                       quality={100}
                       width={640}
