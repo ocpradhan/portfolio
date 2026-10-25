@@ -32,7 +32,7 @@ const nextConfig: NextConfig = {
               key: "Content-Security-Policy",
               value:
                 "default-src 'self'; " +
-                "script-src 'self' 'sha256-KfXooo4rizlmSCXyem8E4dkzrryZYHf4Qn0kK66CRgc=' 'sha256-OBTN3RiyCV4Bq7dFqZ5a2pAXjnCcCyETJMO2I/LYKeo=' 'sha256-FryFe1YiXLx42ounu6mezRn6fKZPky1J4v83ZTswt/Y='; " +
+                "script-src 'self' 'sha256-KfXooo4rizlmSCXyem8E4dkzrryZYHf4Qn0kK66CRgc=' 'script-src 'self' 'sha256-REPLACE_WITH_YOUR_CONSOLE_HASH'; " +
                 "style-src 'self' 'unsafe-inline'; " +
                 "img-src 'self' blob: data:; " +
                 "require-trusted-types-for 'script';",
