@@ -3,9 +3,6 @@ import type { NextConfig } from "next";
 const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
-  images: {
-    qualities: [75, 100],
-  },
   async headers() {
     const securityHeaders = [
       // Enforces HTTPS and secures connections against downgrade attacks
