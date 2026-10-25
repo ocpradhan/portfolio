@@ -1,21 +1,10 @@
 "use client";
 
 import { ReactNode } from "react";
-import dynamic from "next/dynamic";
 import { Button } from "../ui/button";
 import { Menu, X } from "lucide-react";
 import { useNavPanel } from "@/context/NavPanelContext";
-
-const ThemeToggle = dynamic(
-  () =>
-    import("@/components/custom/ThemeToggle").then((mod) => mod.ThemeToggle),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="w-10 h-10 rounded-full border border-input" />
-    ),
-  },
-);
+import { ThemeToggle } from "./ThemeToggle";
 
 type HamburgerProps = {
   children: ReactNode;
