@@ -32,7 +32,7 @@ const nextConfig: NextConfig = {
               key: "Content-Security-Policy",
               value:
                 "default-src 'self'; " +
-                "script-src 'self' 'sha256-n46vPwSWuMC0W703pBofImv82Z26xo4LXYmv0E9caPk=' 'sha256-OBTN3RiyCV4Bq7dFqZ5a2pAXjnCcCyETJMO2I/LYKeo='; " +
+                "script-src 'self' 'unsafe-inline'; " +
                 "style-src 'self' 'unsafe-inline'; " +
                 "img-src 'self' blob: data:; " +
                 "require-trusted-types-for 'script';",
