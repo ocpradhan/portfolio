@@ -78,6 +78,7 @@ export default function Projects() {
                       alt={`${projectName} Image`}
                       width={640}
                       height={360}
+                      priority={index === 0}
                     />
                   </div>
 
