@@ -1,34 +1,12 @@
 "use client";
 
 import { Moon, Sun } from "lucide-react";
-import { useSyncExternalStore } from "react";
 import { useTheme } from "@teispace/next-themes";
 
 import { Button } from "../ui/button";
 
-const emptySubscribe = () => () => {};
-
 export function ThemeToggle() {
   const { theme, setTheme, resolvedTheme } = useTheme();
-  const isMounted = useSyncExternalStore(
-    emptySubscribe,
-    () => true,
-    () => false,
-  );
-
-  if (!isMounted) {
-    return (
-      <Button
-        variant="outline"
-        size="icon"
-        className="cursor-pointer rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-      >
-        <Sun className="h-[1.2rem] w-[1.2rem]" />
-        <span className="sr-only">Toggle theme</span>
-      </Button>
-    );
-  }
-
   const currentTheme = theme === "system" ? resolvedTheme : theme;
 
   return (
