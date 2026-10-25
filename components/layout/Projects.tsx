@@ -79,6 +79,7 @@ export default function Projects() {
                       width={640}
                       height={360}
                       priority={index === 0}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
 
