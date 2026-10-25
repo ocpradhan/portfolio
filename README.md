@@ -11,8 +11,8 @@ A high-performance, accessible, and fully secure developer portfolio built with 
 Optimized for instant rendering, modern accessibility standards, and seamless interaction with autonomous AI agents.
 
 | Metric / Audit       | Score     | Strategy                                                                                                      |
-| :------------------- | :-------- | :------------------------------------------------------------------------------------------------------------ | ---------------------------- |
-| **Performance**      | **100**   | Server Components, automatic font/image optimization                                                          | minimal client JS footprint. |
+| :------------------- | :-------- | :------------------------------------------------------------------------------------------------------------ |
+| **Performance**      | **100**   | Server Components, automatic font/image optimization, minimal client JS footprint.                            |
 | **Accessibility**    | **100**   | Full keyboard navigation support, semantic HTML5 tags, proper ARIA attributes.                                |
 | **Best Practices**   | **100**   | Modern security headers, HTTPS enforcement, clean production build standards.                                 |
 | **SEO**              | **100**   | Structured metadata, dynamic OpenGraph assets, semantic document structure.                                   |
