@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Developer Portfolio
 
-## Getting Started
+A high-performance, accessible, and fully secure developer portfolio built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**. Designed with enterprise-grade security headers, strict Content Security Policy (CSP) configuration, and smooth, zero-flash theme transitions.
 
-First, run the development server:
+[**Live Demo**](https://onesimus-pradhan.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Performance, Accessibility & AI Agent Readiness
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Optimized for instant rendering, modern accessibility standards, and seamless interaction with autonomous AI agents.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Metric / Audit       | Score     | Strategy                                                                                                      |
+| :------------------- | :-------- | :------------------------------------------------------------------------------------------------------------ | ---------------------------- |
+| **Performance**      | **100**   | Server Components, automatic font/image optimization                                                          | minimal client JS footprint. |
+| **Accessibility**    | **100**   | Full keyboard navigation support, semantic HTML5 tags, proper ARIA attributes.                                |
+| **Best Practices**   | **100**   | Modern security headers, HTTPS enforcement, clean production build standards.                                 |
+| **SEO**              | **100**   | Structured metadata, dynamic OpenGraph assets, semantic document structure.                                   |
+| **Agentic Browsing** | **2 / 2** | Clean accessibility tree (clear interactive names/roles) and zero layout shifts (CLS) for AI agent readiness. |
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Responsive Design & UX
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Mobile-First Layout:** Designed from the ground up to ensure seamless usability across all device screen sizes (mobile, tablet, desktop, and ultra-wide).
+- **Adaptive Components**: Clean navigation transitions, fluid typography, and responsive layouts built using Tailwind CSS utility breakpoints.
+- **Touch & Keyboard Optimized:** Accessible interactive elements tuned for both touch navigation on mobile devices and physical keyboard controls on desktop.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Security & Architecture Highlights
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Content Security Policy (CSP):** Header-level CSP implementation configured via `next.config.ts` to protect against cross site scripting (XSS) and unauthorized resource loading.
+- **Production Security Headers:** Configured HSTS (`Strict-Transport-Security`), frame protection (`X-Frame-Options: DENY`), MIME sniffing prevention (`nosniff`), and origin isolation policy (`Cross-Origin-Opener-Policy`).
+- **Zero-Flash Theme Management:** Integrated theme initialization using `@teispace/next-themes` for seamless light/dark/system mode toggles without layout shifts or hydration flashes.
+- **Server-First Architecture:** Built on the Next.js App Router to maximize React Server Components (RSC) usage while keeping interactive client components localized.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS, shadcn/ui
+- **Theme Management:** `@teispace/next-themes`
